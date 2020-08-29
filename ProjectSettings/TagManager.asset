@@ -8,6 +8,8 @@ TagManager:
   - PlayerS
   - PlayerL
   - Camera
+  - Button1
+  - Button2
   layers:
   - Default
   - TransparentFX

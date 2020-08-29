@@ -18,7 +18,7 @@ public class LoadLevel : MonoBehaviour
     //carrega a nova cena
     public void LoadNewScene() {
         Debug.Log("Load New Scene");
-        SceneManager.LoadSceneAsync(levelToLoad);
+        SceneManager.LoadSceneAsync("Level_1");
     }
 
     //sair do jogo

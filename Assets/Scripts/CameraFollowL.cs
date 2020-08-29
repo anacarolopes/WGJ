@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class CameraFollowL : MonoBehaviour
@@ -38,6 +39,18 @@ public class CameraFollowL : MonoBehaviour
             Jogador2.GetComponent<PlayerS>().enabled = false;
             followObject = Jogador1;
         }
+
+        if (PortalB_1.pegouPortalB1 == true && PortalP_1.pegouPortalP1 == true)
+        {
+            string cenaAtual = SceneManager.GetActiveScene().name;
+            SceneManager.LoadScene(cenaAtual);
+        }
+
+        if (Input.GetKey("escape"))
+        {
+            SceneManager.LoadScene("MainMenu");
+        }
+
     }
 
     // Update is called once per frame
